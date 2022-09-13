@@ -22,7 +22,9 @@ function Projects(props) {
   useEffect(() => { 
     
     
-    getProjectsData()}, []);
+    getProjectsData()// eslint-disable-next-line
+  }, []);
+
 
   // define a function that will return the JSX needed once we get the data
   const loaded = () => {
